@@ -42,6 +42,17 @@ header, footer {
   margin-top: 1em;
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+
+}
+
 .menu-icon {
   height: 3.5em;
   background: transparent;
