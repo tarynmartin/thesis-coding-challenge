@@ -1,14 +1,29 @@
+/* Site Wide Styling */
 body {
-  background-image: url("./assets/background.png");
-  background-size: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("./assets/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.3em;
   color: white;
   padding: 0 2em;
 }
+
+a:hover {
+  color: dodgerblue;  
+}
+
+h6 {
+  font-weight: lighter;
+}
+
+/* Header/Footer Styling */
 
 header, footer {
   display: flex;
@@ -16,42 +31,176 @@ header, footer {
   justify-content: space-between;
 }
 
-.title {
+.title, .dropdown {
   padding: 0 1.5em;
 }
 
 .copyright {
-  padding: 2.5em 1em;
+  margin-left: 3.5em;
 }
 
-.dropdown {
-  padding: 0 1.5em;
-}
+/* Body Styling */
 
 .signup {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 2em 3em;
+  padding: 4em;
 }
 
 .site-blurb {
   text-align: left;
   width: 50%;
+  padding-left: 2em;
 }
 
 article > h2 {
   font-size: 4em;
+  width: 65%;
 }
 
 article > p {
   font-size: 2em;
+  width: 70%;
 }
+
+/* User Inputs Styling*/
 
 .user-form {
   text-align: center;
 }
 
-form {
-  
+.user-form > h3 {
+  font-size: 2em;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 1.5em;
+  padding: 1em 12em 1em 1em;
+  background: rgba(75, 121, 165, 0.1);
+  border: solid;
+  border-width: 1px;
+  border-left-color: lightgrey;
+  border-right-color: lightgrey;
+  outline: 0;
+  color: white;
+}
+
+input::placeholder {
+  color: lightgrey;
+  opacity: 1;
+}
+
+.user-name {
+  border-top-color: lightgrey;
+  border-bottom-color:rgba(75, 121, 165, 0.4);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.user-email {
+  border-top-color: rgba(75, 121, 165, 0.4);
+  border-bottom-color: rgba(75, 121, 165, 0.4);
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.user-password {
+  border-top-color: rgba(75, 121, 165, 0.4);
+  border-bottom-color: lightgrey;
+}
+
+.user-submit {
+  font-size: 2em;
+  padding: .5em;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.user-submit:hover {
+  cursor: pointer;
+  background-color: skyblue;
+}
+
+.user-submit:focus {
+  background-color: skyblue;
+}
+
+.terms {
+  font-weight: bolder;
+  padding: 0;
+  margin: 0
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1240px) {
+  body {
+    width: 100vw;
+  }
+
+  .signup {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1em; */
+  }
+
+  .site-blurb {
+    text-align: center;
+    width: 85%;
+    padding-bottom: 2em;
+  }
+
+  article > h2 {
+    font-size: 2em;
+    width: 90%;
+  }
+
+  article > p {
+    font-size: 1em;
+    width: 90%;
+  }
+
+  .user-form {
+    width: 90%;
+    padding: 2em 0;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  a {
+    padding: 0 0.5em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  a {
+    padding: .3em 0.2em;
+  }
+  body {
+    background-image: url("./assets/background.png");
+  }
+
+  header, footer {
+    width: 100vw;
+    padding-top: 1em;
+  }
+
+
+  .signup {
+    padding: 1em 2.5em;
+    width: 100%;
+  }
+
+  input {
+    padding: .5em 6em .5em .5em;
+  }
+} 
