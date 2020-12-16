@@ -1,0 +1,57 @@
+body {
+  background-image: url("./assets/background.png");
+  background-size: 100%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2em;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 0 1.5em;
+}
+
+.copyright {
+  padding: 2.5em 1em;
+}
+
+.dropdown {
+  padding: 0 1.5em;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 3em;
+}
+
+.site-blurb {
+  text-align: left;
+  width: 50%;
+}
+
+article > h2 {
+  font-size: 4em;
+}
+
+article > p {
+  font-size: 2em;
+}
+
+.user-form {
+  text-align: center;
+}
+
+form {
+  
+}
