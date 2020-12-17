@@ -36,7 +36,7 @@ To see code, open with your preferred code editor
 
 ### How to see the product
 
-In terminal directory, type open `index.html` to open site in browser
+In terminal directory, type `open index.html` to open site in browser
 
 ## Next Steps
 - Improve responsiveness; site doesn't look like it fits on one or two devices when checking for responsiveness
