@@ -13,7 +13,7 @@ Site based on a reference image for the Thesis coding challenge.
 
 **Reference Image**
 
-![Static reference image for site](./src/assets/Front End Dev Challenge.pdf)
+![Static reference image for site](./src/assets/dev-challenge.pdf)
 
 ## Built With
 
